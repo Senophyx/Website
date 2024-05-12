@@ -38,7 +38,6 @@ def index():
 @app.route('/l/<id>')
 def path_redirect(id):
     url_id = request.view_args['id']
-    print(f"Path args : {url_id}")
     id_list = get_gist_content(GIST_CONFIG_LINK)['redirect_link']
 
     for ids in id_list:
