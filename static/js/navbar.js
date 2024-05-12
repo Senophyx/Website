@@ -1,5 +1,5 @@
-const icon = document.querySelector('.icon');
-const menu = document.querySelector('.menu');
+const icon = document.querySelector('.navbar-icon');
+const menu = document.querySelector('.navbar-menu');
 const span = document.querySelector('.span')
 
 function toggleNavbar() {
@@ -7,6 +7,6 @@ function toggleNavbar() {
     icon.classList.toggle('active');
 }
 
-document.querySelector('.toggle-btn').addEventListener('click', function () {
+document.querySelector('.navbar-toggle-btn').addEventListener('click', function () {
     toggleNavbar();
 });

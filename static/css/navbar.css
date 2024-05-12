@@ -19,29 +19,29 @@
     justify-content: space-between;
 }
 
-.logo {
+.navbar-logo {
     width: 5rem
 }
 
-.logo img {
+.navbar-logo img {
     width: 100%;
 }
 
-.logo p {
+.navbar-logo p {
     font-size: 30px;
     color: black;
 }
 
-.menu {
+.navbar-menu {
     list-style: none;
 }
 
-.menu li {
+.navbar-menu li {
     position: relative;
     float: left;
 }
 
-.menu li a {
+.navbar-menu li a {
     font-family: "Poppins", sans-serif;
     font-size: 1.2rem;
     color: black;
@@ -50,11 +50,11 @@
     padding: 1rem 1.5rem;
 }
 
-.menu li a:hover {
+.navbar-menu li a:hover {
     color: rgb(181, 181, 181);
 }
 
-.submenu {
+.navbar-submenu{
     position: absolute;
     left: 0;
     background: white;
@@ -64,25 +64,25 @@
     box-shadow: 7px 7px #26292a;
 }
 
-.submenu-wrapper:hover .submenu,
-.submenu-wrapper:focus-within .submenu {
+.navbar-submenu-wrapper:hover .navbar-submenu,
+.navbar-submenu-wrapper:focus-within .navbar-submenu{
     display: initial;
 }
 
 
-.submenu li {
+.navbar-submenu li {
     width: 100%;
     list-style: none;
     border-top: .1rem solid #222f37;
 }
 
-.toggle-btn {
+.navbar-toggle-btn {
     display: none;
     /* Initially hide the toggle button */
     z-index: 1000;
 }
 
-.nav-icon {
+.navbar-icon {
     position: relative;
     width: 1.5rem;
     height: .8rem;
@@ -90,7 +90,7 @@
     z-index: 100;
 }
 
-.nav-icon::before {
+.navbar-icon::before {
     top: 0;
     right: 0;
     content: '';
@@ -101,7 +101,7 @@
     transition: all 0.3s ease-in-out;
 }
 
-.nav-icon::after {
+.navbar-icon::after {
     bottom: 0;
     right: 0;
     content: '';
@@ -113,23 +113,23 @@
 }
 
 /* Rotate the before and after lines to create the close icon effect */
-.nav-icon.active::before {
+.navbar-icon.active::before {
     width: 1.5rem;
     transform: rotate(-45deg) translate(-0.21rem, 0.21rem);
 }
 
-.nav-icon.active::after {
+.navbar-icon.active::after {
     width: 1.5rem;
     transform: rotate(45deg) translate(-0.21rem, -0.21rem);
 }
 
 
 @media (max-width: 991px) {
-    .toggle-btn {
+    .navbar-toggle-btn {
         display: block;
     }
 
-    .menu {
+    .navbar-menu {
         width: 100%;
         position: absolute;
         top: 100%;
@@ -138,25 +138,25 @@
         backdrop-filter: blur(10px);
     }
 
-    .menu.active {
+    .navbar-menu.active {
         display: initial
     }
 
-    .menu li {
+    .navbar-menu li {
         width: 100%;
     }
 
-    .submenu {
+    .navbar-submenu {
         position: relative;
         width: 100%;
     }
 
-    .submenu li {
+    .navbar-submenu li {
         backdrop-filter: blur(30px);
         border-top: 0;
     }
 
-    .submenu li a {
+    .navbar-submenu li a {
         padding-left: 2rem;
     }
 }
