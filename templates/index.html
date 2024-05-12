@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Senophyx's portfolio and official website.">
+    <title>Senophyx - Portfolio</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/alert.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/navbar.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/mediaqueries.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+    {% if alert_status['enable'] == True %}
+    <div class="alert" id="alert-bar">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        {{ alert_status['content'] }}
+    </div>
+    {% endif %}
+
+
+    <nav class="navbar">
+        <div class="logo">
+            <!-- <img src="./navbar-icon.png" alt=""> -->
+            <p>Senophyx</p>
+        </div>
+        <div class="toggle-btn">
+            <div class="nav-icon"></div>
+        </div>
+        <ul class="menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#journey">Journey</a></li>
+            <li class="submenu-wrapper">
+                <a href="#projects">Projects<span> > </span></a>
+                <ul class="submenu">
+                    <li><a href="https://github.com/Senophyx/Discord-RPC">Discord-RPC</a></li>
+                    <li><a href="https://github.com/EterNomm/Whitehat">Whitehat</a></li>
+                    <li><a href="https://github.com/Senophyx/arithmos-cipher">Arithmos Cipher</a></li>
+                </ul>
+            </li>
+            <li><a href="#sosmed">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <section id="profile" style="margin-bottom: 40px;">
+        <div class="pic-container">
+            <img src="{{ url_for('static', filename='img/marin.jpg') }}" alt="Senophyx" class="pic-img"/>
+        </div>
+        <div class="profile-text">
+            <h1 class="text-title">Senophyx</h1>
+            <p class="profile-subtitle">{{ subtitle_status }}</p>
+            <div class="btn-container">
+
+                <button class="btn btn-color-1" onclick="location.href='./#about'" style="width: 300px;">
+                    About Me
+                </button>
+                
+            </div>
+        </div>
+    </section>
+
+
+    <section id="about">
+        <h1 class="text-title" style="margin-bottom: 20px;">About Me</h1>
+        <div class="section-container">
+            <div class="pic-container">
+                <img src="{{ url_for('static', filename='img/EterNomm_original.png') }}" alt="Profile picture"
+                    class="about-pic" />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="{{ url_for('static', filename='img/experience.png') }}" alt="Experience icon"
+                            class="icon" />
+                        <h3>Experience</h3>
+                        <p>4+ Years Programing Experience</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="{{ url_for('static', filename='img/education.png') }}" alt="Education icon"
+                            class="icon" />
+                        <h3>Work</h3>
+                        <p>EterNomm</p>
+                        <p>CyraTeam</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        Hey there! I'm Senophyx (pseudonym), a self-taught programmer who has been familiar with the
+                        world of programming for more than 4 years, especially Python.
+                        I also like watching anime and playing games (especially FPS, with 1000+ hours on VALORANT).
+                        Has developed more than 20+ projects and has been trusted to be the developer and admin of
+                        various big teams and organizations.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="skills">
+        <h1 class="text-title">Skills</h1>
+        <div class="skills-container">
+            <div class="skill">
+                <div class="skill-name">Python</div>
+                <div class="skill-bar">
+                    <div class="skill-per" per="90%" style="max-width: 90%;"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">Web Dev</div>
+                <div class="skill-bar">
+                    <div class="skill-per" per="75%" style="max-width: 75%;"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">Blockchain</div>
+                <div class="skill-bar">
+                    <div class="skill-per" per="10%" style="max-width: 10%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="journey">
+        <h1 class="text-title">Journey</h1>
+        <section class="timeline-container">
+            <div class="timeline-items">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Jun, 2022</div>
+                    <div class="timeline-content">
+                        <h3>Getting Serious Learning programming by joining Vocational School</h3>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Sep, 2021</div>
+                    <div class="timeline-content">
+                        <h3>Founding & Building "EterNomm" Organization</h3>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Aug, 2020</div>
+                    <div class="timeline-content">
+                        <h3>Started Learning Python and HTML</h3>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Feb, 2020</div>
+                    <div class="timeline-content">
+                        <h3>Creating discord bot with JavaScript</h3>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Oct, 2019</div>
+                    <div class="timeline-content">
+                        <h3>My first program with windows batch</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section id="projects">
+        <h1 class="text-title">Top Projects</h1>
+
+        <div class="project-container">
+            <div class="project-card">
+                <img src="https://opengraph.githubassets.com/1/Senophyx/Discord-RPC" alt="Discord-RPC Project Card">
+                <div class="project-content">
+                    <h3>Discord-RPC</h3>
+                    <p>A Python Wrapper for Discord Rich Presence.</p>
+                </div>
+                <a href="https://github.com/Senophyx/Discord-RPC" class="project-button">Repository</a>
+            </div>
+
+            <div class="project-card">
+                <img src="https://opengraph.githubassets.com/1/EterNomm/Whitehat" alt="Discord-RPC Project Card">
+                <div class="project-content">
+                    <h3>Whitehat</h3>
+                    <p>Python library for Ethical Hacking. <b>Archived on Apr 20, 2023.</b></p>
+                </div>
+                <a href="https://github.com/EterNomm/Whitehat" class="project-button">Repository</a>
+            </div>
+
+            <div class="project-card">
+                <img src="https://opengraph.githubassets.com/1/Senophyx/arithmos-cipher" alt="Discord-RPC Project Card">
+                <div class="project-content">
+                    <h3>Arithmos Cipher</h3>
+                    <p>A simple Cipher encryption using number.</p>
+                </div>
+                <a href="https://github.com/Senophyx/arithmos-cipher" class="project-button">Repository</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="sosmed">
+        <h1 class="text-title">Social Media</h1>
+        <div class="sosmed-upper-container">
+            <div class="sosmed-container">
+                <a href="https://github.com/Senophyx" target="_blank"><i class="ri-github-fill sosmed-icon"></i></a>
+                <a href="https://instagram.com/senophyx" target="_blank"><i class="ri-instagram-line sosmed-icon"></i></a>
+                <a href="https://tiktok.com/senophyx" target="_blank"><i class="ri-tiktok-line sosmed-icon"></i></a>
+                <a href="https://twitter.com/senophyx" target="_blank"><i class="ri-twitter-x-line sosmed-icon"></i></a>
+                <a href="https://steamcommunity.com/id/senophyx" target="_blank"><i class="ri-steam-fill sosmed-icon"></i></a>
+                <a href="https://reddit.com/u/Senophyx" target="_blank"><i class="ri-reddit-fill sosmed-icon"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p class="copyright">Copyright &#169; 2023-2024 <a href="https://senophyx.id/">Senophyx</a>. All Rights
+            Reserved.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/navbar.js') }}"></script>
+</body>
+
+</html>

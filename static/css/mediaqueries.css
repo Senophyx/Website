@@ -1,0 +1,129 @@
+@media screen and (max-width: 1400px) {
+    #profile {
+        height: 83vh;
+        margin-bottom: 6rem;
+    }
+
+    .about-containers {
+        flex-wrap: wrap;
+    }
+
+    #contact,
+    #projects {
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+        display: none;
+    }
+
+    #mobile-nav {
+        display: flex;
+    }
+
+    #experience,
+    .experience-details-container {
+        margin-top: 2rem;
+    }
+
+    #profile,
+    .section-container {
+        display: block;
+    }
+
+    section,
+    .section-container {
+        height: fit-content;
+    }
+
+    section {
+        margin: 0 5%;
+    }
+
+    .pic-container {
+        width: 275px;
+        height: 275px;
+        margin: 0 auto 2rem;
+    }
+
+    .about-containers {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .timeline-items::before {
+        left: 7px;
+    }
+
+    .timeline-item:nth-child(odd) {
+        padding-right: 0;
+        text-align: left;
+    }
+
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        padding-left: 37px;
+    }
+
+    .timeline-dot {
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    #profile {
+        height: 83vh;
+        margin-bottom: 0;
+    }
+
+    .about-containers,
+    .sosmed-upper-container,
+    .btn-container {
+        flex-wrap: wrap;
+    }
+
+    .sosmed-container {
+        margin: 0;
+    }
+
+    .sosmed-container p,
+    .nav-links li a {
+        font-size: 1rem;
+    }
+
+    .experience-sub-title {
+        font-size: 1.25rem;
+    }
+
+    .nav-logo {
+        font-size: 1.5rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+
+    .pic-container {
+        width: auto;
+        height: 46vw;
+        justify-content: center;
+    }
+
+    .profile-subname {
+        font-size: 1.25rem;
+    }
+
+    .text-title {
+        font-size: 2rem;
+    }
+
+    .text-container {
+        text-align: justify;
+    }
+}
