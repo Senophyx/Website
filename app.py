@@ -34,8 +34,12 @@ def index():
                            )
 
 
+@app.route('/l/')
+def path_redirect_none():
+    return '/l/ is used to redirect something'
 
-@app.route('/l/<id>')
+
+@app.route('/l/<id>/')
 def path_redirect(id):
     url_id = request.view_args['id']
     id_list = get_gist_content(GIST_CONFIG_LINK)['redirect_link']
