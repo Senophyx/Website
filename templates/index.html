@@ -23,29 +23,7 @@
     {% endif %}
 
 
-    <nav class="navbar">
-        <div class="navbar-logo">
-            <!-- <img src="./navbar-icon.png" alt=""> -->
-            <p>Senophyx</p>
-        </div>
-        <div class="navbar-toggle-btn">
-            <div class="navbar-icon"></div>
-        </div>
-        <ul class="navbar-menu">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#journey">Journey</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li class="navbar-submenu-wrapper">
-                <a>Contact<span> > </span></a>
-                <ul class="navbar-submenu">
-                    <li><a target="_blank" href="https://discord.gg/atDSyuYyxv">Discord</a></li>
-                    <li><a target="_blank" href="https://twitter.com/Senophyx">Twitter</a></li>
-                    <li><a target="_blank" href="https://t.me/Senophyx">Telegram</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
+    {% include 'components/navbar.html' %}
 
 
     <section id="profile" style="margin-bottom: 40px;">
@@ -225,10 +203,7 @@
         </div>
     </section>
 
-    <footer>
-        <p class="copyright">Copyright &#169; 2023-2024 <a href="https://senophyx.id/">Senophyx</a>. All Rights
-            Reserved.</p>
-    </footer>
+    {% include 'components/footer.html' %}
 
     <script src="{{ url_for('static', filename='js/navbar.js') }}"></script>
 </body>
