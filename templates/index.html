@@ -12,6 +12,16 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/navbar.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/mediaqueries.css') }}">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MPYYSS7F1C"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-MPYYSS7F1C');
+    </script>
 </head>
 
 <body>
@@ -28,7 +38,7 @@
 
     <section id="profile" style="margin-bottom: 40px;">
         <div class="pic-container">
-            <img src="{{ url_for('static', filename='img/marin.jpg') }}" alt="Senophyx" class="pic-img"/>
+            <img src="{{ url_for('static', filename='img/marin.jpg') }}" alt="Senophyx" class="pic-img" />
         </div>
         <div class="profile-text">
             <h1 class="text-title">Senophyx</h1>
@@ -38,7 +48,7 @@
                 <button class="btn btn-color-1" onclick="location.href='./#about'" style="width: 300px;">
                     About Me
                 </button>
-                
+
             </div>
         </div>
     </section>
@@ -68,10 +78,18 @@
                 </div>
                 <div class="text-container">
                     <p>
-                        Hello, my name is <b>Senophyx</b>. I am a programmer from <b>Indonesia</b>. I have experience in various programming languages including <b>Python</b>, <b>JavaScript</b>, <b>HTML</b>, <b>CSS</b> but I prefer to use Python.
-                        I know the programming world since <b>2019</b> because I didn't have much to do during the Covid-19 pandemic. I am also the founder of an organization called <b>EterNomm</b>, a small programmer organization focused on <b>Open-Source</b> projects.
-                        I am also an <b>administrator</b> and <b>developer</b> in several projects and large organizations. I also have many projects (most of which are unmaintained and forgotten), one of the best is <b>Discord-RPC</b>.
-                        Most of my social media is under the username <b>Senophyx</b>. So if you want to interact with me, just visit my social media or join my <b>Discord server</b>, as I'm mostly active on Discord. See you there!
+                        Hello, my name is <b>Senophyx</b>. I am a programmer from <b>Indonesia</b>. I have experience in
+                        various programming languages including <b>Python</b>, <b>JavaScript</b>, <b>HTML</b>,
+                        <b>CSS</b> but I prefer to use Python.
+                        I know the programming world since <b>2019</b> because I didn't have much to do during the
+                        Covid-19 pandemic. I am also the founder of an organization called <b>EterNomm</b>, a small
+                        programmer organization focused on <b>Open-Source</b> projects.
+                        I am also an <b>administrator</b> and <b>developer</b> in several projects and large
+                        organizations. I also have many projects (most of which are unmaintained and forgotten), one of
+                        the best is <b>Discord-RPC</b>.
+                        Most of my social media is under the username <b>Senophyx</b>. So if you want to interact with
+                        me, just visit my social media or join my <b>Discord server</b>, as I'm mostly active on
+                        Discord. See you there!
                     </p>
                 </div>
             </div>
@@ -194,10 +212,12 @@
         <div class="sosmed-upper-container">
             <div class="sosmed-container">
                 <a href="https://github.com/Senophyx" target="_blank"><i class="ri-github-fill sosmed-icon"></i></a>
-                <a href="https://instagram.com/senophyx" target="_blank"><i class="ri-instagram-line sosmed-icon"></i></a>
+                <a href="https://instagram.com/senophyx" target="_blank"><i
+                        class="ri-instagram-line sosmed-icon"></i></a>
                 <a href="https://tiktok.com/senophyx" target="_blank"><i class="ri-tiktok-line sosmed-icon"></i></a>
                 <a href="https://twitter.com/senophyx" target="_blank"><i class="ri-twitter-x-line sosmed-icon"></i></a>
-                <a href="https://steamcommunity.com/id/senophyx" target="_blank"><i class="ri-steam-fill sosmed-icon"></i></a>
+                <a href="https://steamcommunity.com/id/senophyx" target="_blank"><i
+                        class="ri-steam-fill sosmed-icon"></i></a>
                 <a href="https://reddit.com/u/Senophyx" target="_blank"><i class="ri-reddit-fill sosmed-icon"></i></a>
             </div>
         </div>
