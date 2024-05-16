@@ -8,7 +8,6 @@
     <title>Senophyx - Portfolio</title>
 
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/alert.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/mediaqueries.css') }}">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 
@@ -17,13 +16,7 @@
 </head>
 
 <body>
-    {% if alert_status['enable'] == True %}
-    <div class="alert" id="alert-bar">
-        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-        {{ alert_status['content'] }}
-    </div>
-    {% endif %}
-
+    {% include 'components/alert.html' %}
 
     {% include 'components/navbar.html' %}
 

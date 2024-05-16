@@ -1,0 +1,8 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/alert.css') }}">
+
+{% if alert_status['enable'] == True %}
+    <div class="alert" id="alert-bar">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        {{ alert_status['content'] }}
+    </div>
+{% endif %}
