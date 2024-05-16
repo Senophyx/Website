@@ -4,16 +4,18 @@
 <nav class="navbar">
     <div class="navbar-logo">
         <!-- <img src="./navbar-icon.png" alt=""> -->
-        <p>Senophyx</p>
+        <a href="{{ url_for('index' ) }}">
+            <p>Senophyx</p>
+        </a>
     </div>
     <div class="navbar-toggle-btn">
         <div class="navbar-icon"></div>
     </div>
     <ul class="navbar-menu">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#journey">Journey</a></li>
-        <li><a href="#projects">Projects</a></li>
+        <li><a href="{{ url_for('index' ) }}#about">About</a></li>
+        <li><a href="{{ url_for('index' ) }}#skills">Skills</a></li>
+        <li><a href="{{ url_for('index' ) }}#journey">Journey</a></li>
+        <li><a href="{{ url_for('index' ) }}#projects">Projects</a></li>
         <li class="navbar-submenu-wrapper">
             <a>Contact<span> > </span></a>
             <ul class="navbar-submenu">
