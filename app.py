@@ -48,7 +48,7 @@ def path_redirect(id):
         if ids['id'] == url_id:
             url = ids['url']
 
-            return redirect(url, code=302)
+            return render_template('components/redirect.html', redirect_url=url)
     
     else:
         return f'"{url_id}" is invalid url id.'
