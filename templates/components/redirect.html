@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting to {{ redirect_url }}</title>
+    <!-- Analytics Service -->
+    {% include 'components/analytics.html'%}
+    <!-- Redirect -->
+    <meta http-equiv="refresh" content="0; url={{ redirect_url }}" />
+</head>
+<body>
+    <p>Redirecting you to {{ redirect_url }}</p>
+    <br>
+    If you are not redirected automatically, <a href='{{ redirect_url }}'>click here</a>.
+</body>
+</html>
