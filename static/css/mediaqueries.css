@@ -81,16 +81,16 @@
     }
 
     .about-containers,
-    .sosmed-upper-container,
+    .social-upper-container,
     .btn-container {
         flex-wrap: wrap;
     }
 
-    .sosmed-container {
+    .social-container {
         margin: 0;
     }
 
-    .sosmed-container p,
+    .social-container p,
     .nav-links li a {
         font-size: 1rem;
     }

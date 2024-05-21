@@ -352,7 +352,7 @@ section {
     padding: 0.5rem;
 }
 
-.sosmed-container {
+.social-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -360,15 +360,15 @@ section {
     margin: 1rem;
 }
 
-.sosmed-container a:hover {
+.social-container a:hover {
     text-decoration: none;
 }
 
-.sosmed-container p {
+.social-container p {
     font-size: larger;
 }
 
-.sosmed-icon {
+.social-icon {
     font-size: 40px;
 }
 
